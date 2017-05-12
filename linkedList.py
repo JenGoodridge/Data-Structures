@@ -60,9 +60,10 @@ class TestlinkedListMethods(unittest.TestCase):
     def setUp(self):
         self.list = linkedList()
         self.list.prepend(0)
+        self.list.prepend(-1)
         self.list.append(1)
         self.list.append(2)
-        self.list.prepend(-1)
+        
 
     def test_append_prepend(self):
         self.assertEqual(self.list.head.data, -1)
